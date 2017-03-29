@@ -86,7 +86,7 @@ class Rot13(webapp2.RequestHandler):
 	def post(self):
 		text_trans = self.request.get('text')
 		"""
-			Trasnlate Text
+			Translate Text
 		"""
 		if text_trans:
 			text_trans = self.trans(text_trans)
