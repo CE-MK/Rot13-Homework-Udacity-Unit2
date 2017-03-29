@@ -29,7 +29,7 @@ Do not know what Rot13 is? </p><a target="_blank" href="http://en.wikipedia.org/
 
 class Rot13(webapp2.RequestHandler):
 	"""
-		escape methd to make sure there is no code getting submitted
+		escape method to make sure there is no code getting submitted
 	"""
 	def escape_html(self, s):
 		return cgi.escape(s, quote = True)
