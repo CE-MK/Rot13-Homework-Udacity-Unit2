@@ -100,11 +100,4 @@ class Rot13(webapp2.RequestHandler):
 			self.response.out.write("Please fill in some Text")
 
 
-
-#
-#
-#       END!
-#
-#
-
 app = webapp2.WSGIApplication([('/', Rot13)], debug = True)
